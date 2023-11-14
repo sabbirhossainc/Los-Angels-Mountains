@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth duration-200">
+
+<head>
+  <!-- meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" class="rounded-md" type="image/png" href="/img/sabbir(350).png" />
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+    @import url("https://use.typekit.net/pkd8yto.css");
+  </style>
+  </style>
+  <script src="https://kit.fontawesome.com/ea30a0e1b3.js" crossorigin="anonymous"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!-- styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            graydark: '#63769d',
+            gray: '#657893',
+            blue: '#414f6b',
+            navy: "#b0b4be",
+            brown: '#4d4d4d',
+            white: '#ffffff',
+          },
+          fontFamily: {
+            sans: ["Oswald"],
+            serif: ["myriad-pro", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="/CSS/style.css" />
+
+  <title>LosAngels | Mountains</title>
+
+</head>
+
+<body class="bg-white dark:bg-gray-900 dark:bg-none">
+
+  <nav-card></nav-card>
+  <main>
+    <hero-card></hero-card>
+    <history-card></history-card>
+    <team-card></team-card>
+  </main>
+  <footer-card></footer-card>
+
+  <script src="/components/nav.js"></script>
+  <script src="/components/hero.js"></script>
+  <script src="/components/history.js"></script>
+  <script src="/components/team.js"></script>
+  <script src="/components/footer.js"></script>
+
+  <!-- JavaScript -->
+  <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 4000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+
+</body>
+
+</html>
